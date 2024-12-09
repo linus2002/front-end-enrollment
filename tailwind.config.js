@@ -20,6 +20,12 @@ export default {
             'moss-green': '#A2B568',
             'light-gray': '#f1f1f1',
           },
+
+          spacing: {
+            'logo': '5rem', // Custom size for logo (width & height)
+            'icon': '2rem', // Custom size for icons (width & height)
+          },
+
           fontFamily: {
             sans: ['Poppins', ...defaultTheme.fontFamily.sans],
           },
