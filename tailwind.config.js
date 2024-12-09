@@ -20,7 +20,15 @@ export default {
             'moss-green': '#A2B568',
             'light-gray': '#f1f1f1',
           },
+          fontFamily: {
+            sans: ['Poppins', ...defaultTheme.fontFamily.sans],
+          },
+          boxShadow: {
+            'small': '0 2px 4px rgba(0, 0, 0, 0.25)',
+            'big': '0 4px 4px rgba(0, 0, 0, 0.25)'
+          }
         },
-      },
+    },
+
     plugins: [forms],
 };
