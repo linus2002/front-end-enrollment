@@ -19,6 +19,7 @@ export default {
             'lime-green': '#9DC88D',
             'moss-green': '#A2B568',
             'light-gray': '#f1f1f1',
+            'gray': '#585858'
           },
 
           spacing: {
@@ -30,11 +31,22 @@ export default {
             sans: ['Poppins', ...defaultTheme.fontFamily.sans],
           },
           boxShadow: {
-            'small': '0 2px 4px rgba(0, 0, 0, 0.25)',
-            'big': '0 4px 4px rgba(0, 0, 0, 0.25)'
+            'small': '0 3px 6px rgba(0, 0, 0, 0.20)',
+            'big': '0 8px 8px rgba(0, 0, 0, 0.25)'
           }
         },
     },
 
-    plugins: [forms],
+    plugins: 
+    [
+      function ({ addComponents }) {
+        addComponents({
+          '.font-table-header': {
+            fontWeight: '600',
+            color: '#164A41',  
+            fontSize: '1.6rem', 
+          },
+        });
+      },
+    ],
 };
