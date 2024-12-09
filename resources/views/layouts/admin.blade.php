@@ -26,7 +26,7 @@
             <!-- Home Icon -->
             <li class="flex flex-col items-center group">
         <img src="{{ asset('assets/dashboard.svg') }}" alt="Bacoor Logo" class="h-icon w-icon ml-4 mr-4 group-hover:scale-110 transition-transform duration-200 ease-in-out">
-        <span class="text-xs mt-1 text-center font-semibold font-poppins group-hover:scale-125 transition-all duration-200 ease-in-out">Home</span>
+        <span class="text-xs mt-1 text-center font-semibold font-poppins group-hover:scale-125 transition-all duration-200 ease-in-out bg-yellow">Home</span>
     </li>
 
     <!-- Users Icon -->
