@@ -4,21 +4,49 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
     <title>Admin</title>
     @vite('resources/css/app.css')
 </head>
 <body class="bg-gray-100">
     <div class="flex">
         <!-- Sidebar -->
-        <div class="w-64 bg-gray-800 text-white min-h-screen">
-            <div class="p-4">
-                <h2 class="text-xl font-semibold"> Bacoor</h2>
-                <ul class="mt-6 space-y-4">
-                    <li><a href="#" class="hover:bg-gray-700 p-2 rounded">Dashboard</a></li>
-                    <!-- Add more sidebar links here -->
-                </ul>
+        <div class="w-[8rem] bg-primary text-white min-h-screen flex flex-col items-center justify-between py-6 rounded-xl" >
+        <!-- Top Section -->
+        <div class="flex flex-col items-center">
+            <!-- Logo -->
+            <div class="mb-6">
+            <img src="{{ asset('assets/cvsu.svg') }}" alt="Bacoor Logo" class="h-logo w-logo ml-4 mr-4">
+            <p class="text-md mt-2 text-center font-semibold font-poppins">Bacoor</p>
+
             </div>
-        </div>
+
+        <!-- Icons with Labels -->
+        <ul class="space-y-8">
+            <!-- Home Icon -->
+            <li class="flex flex-col items-center group">
+        <img src="{{ asset('assets/dashboard.svg') }}" alt="Bacoor Logo" class="h-icon w-icon ml-4 mr-4 group-hover:scale-110 transition-transform duration-200 ease-in-out">
+        <span class="text-xs mt-1 text-center font-semibold font-poppins group-hover:scale-125 transition-all duration-200 ease-in-out">Home</span>
+    </li>
+
+    <!-- Users Icon -->
+    <li class="flex flex-col items-center group">
+        <img src="{{ asset('assets/users.svg') }}" alt="Bacoor Logo" class="h-icon w-icon ml-4 mr-4 group-hover:scale-110 transition-transform duration-200 ease-in-out">
+        <span class="text-xs mt-1 text-center font-semibold font-poppins group-hover:scale-125 transition-all duration-200 ease-in-out">Users</span>
+    </li>
+</ul>
+    </div>
+
+    <!-- Logout Button -->
+    <div class="flex flex-col items-center">
+    <button class="flex items-center space-x-2 group"> <!-- Added group class to the button -->
+        <img src="{{ asset('assets/signout.svg') }}" alt="Signout Icon" class="h-icon w-icon group-hover:scale-110 transition-transform duration-200 ease-in-out">
+        <span class="text-xs mt-1 text-center font-semibold font-poppins group-hover:scale-125 transition-all duration-200 ease-in-out">Logout</span>
+    </button>
+</div>
+
+</div>
+
 
         <!-- Main Content -->
         <div class="flex-1">
